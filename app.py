@@ -1,3 +1,12 @@
+from src.security.env_check import run_full_security_scan
+_security_results = run_full_security_scan()
+if not _security_results["is_clean"]:
+    import streamlit as st
+    st.sidebar.error(
+        "SECURITY WARNING: Possible exposed secrets detected. "
+        "Check logs immediately before pushing to GitHub."
+    )
+
 import streamlit as st
 import pandas as pd
 import numpy as np

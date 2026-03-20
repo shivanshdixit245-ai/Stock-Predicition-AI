@@ -1,5 +1,17 @@
 # Environment
 .env
+.env.local
+.env.production
+.env.*
+!.env.example
+*.key
+*.secret
+secrets.txt
+secrets.json
+*credentials*
+*api_key*
+data/security/
+logs/
 *.env
 
 # Data (too large for GitHub)

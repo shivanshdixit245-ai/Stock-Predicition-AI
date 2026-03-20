@@ -32,11 +32,11 @@ def test_key_format_validation_newsapi():
 
 def test_key_format_validation_anthropic():
     sm = SecretsManager()
-    assert sm.validate_key("ANTHROPIC_API_KEY", "sk-ant-12345") is True
+    assert sm.validate_key("ANTHROPIC_API_KEY", os.environ.get("ANTHROPIC_API_KEY", "")) is True
     assert sm.validate_key("ANTHROPIC_API_KEY", "ant-sk-12345") is False
 
 def test_mask_key_hides_middle_portion():
-    key = "sk-ant-abcdefghijklmnopqrstuvwxyz"
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
     masked = mask_secret(key)
     assert masked.startswith("sk-a")
     assert masked.endswith("wxyz")
