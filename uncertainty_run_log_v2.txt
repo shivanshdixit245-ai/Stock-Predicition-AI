@@ -1,0 +1,40 @@
+﻿python : Traceback 
+(most recent call 
+last):
+At line:1 char:22
++ $env:PYTHONPATH="."; 
+python src/models/uncer
+tainty.py 2>&1 | 
+Out-File ...
++                      
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Traceback (mo   
+ st recent call las    
+t)::String) [], Re    
+moteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  File "C:\Users\ashmi\
+OneDrive\Desktop\N2\src
+\models\uncertainty.py"
+, line 50, in <module>
+    from 
+mapie.classification 
+import MapieClassifier
+ImportError: cannot 
+import name 
+'MapieClassifier' from 
+'mapie.classification' 
+(C:\Users\ashmi\AppData
+\Local\Packages\PythonS
+oftwareFoundation.Pytho
+n.3.13_qbz5n2kfra8p0\Lo
+calCache\local-packages
+\Python313\site-package
+s\mapie\classification.
+py)

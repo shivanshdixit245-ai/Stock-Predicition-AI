@@ -1,0 +1,57 @@
+# Data
+yfinance>=0.2.36
+newsapi-python>=0.2.7
+pyarrow>=14.0.0
+fastparquet>=2023.10.1
+
+# Feature engineering
+pandas>=2.0.0
+numpy>=1.26.0
+pandas-ta>=0.3.14b
+scipy>=1.11.0
+
+# NLP
+vaderSentiment>=3.3.2
+transformers>=4.37.0
+torch>=2.1.0
+
+# ML
+scikit-learn>=1.4.0
+xgboost>=2.0.3
+lightgbm>=4.2.0
+optuna>=3.5.0
+shap>=0.44.1
+mapie>=0.8.2
+hmmlearn>=0.3.2
+ruptures>=1.1.9
+
+# Backtesting
+vectorbt>=0.26.2
+quantstats>=0.0.62
+
+# AI Assistant
+google-generativeai>=0.8.0
+
+# Experiment tracking
+mlflow>=2.10.0
+
+# Monitoring
+evidently>=0.4.13
+apscheduler>=3.10.4
+
+# Dashboard
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# API
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Code quality
+loguru>=0.7.2
+ruff>=0.2.0
+mypy>=1.8.0
+pytest>=7.4.0
+pytest-cov>=4.1.0

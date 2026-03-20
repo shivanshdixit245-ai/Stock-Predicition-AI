@@ -1,0 +1,34 @@
+{
+    "psi_results": {
+        "rsi_14": {
+            "psi": 5.3081,
+            "status": "red"
+        },
+        "macd": {
+            "psi": 3.4041,
+            "status": "red"
+        },
+        "realised_vol_20": {
+            "psi": 5.8903,
+            "status": "red"
+        },
+        "bb_pct": {
+            "psi": 4.1635,
+            "status": "red"
+        },
+        "sentiment_finbert": {
+            "psi": 2.899,
+            "status": "red"
+        }
+    },
+    "drifted_features": [
+        "rsi_14",
+        "macd",
+        "realised_vol_20",
+        "bb_pct",
+        "sentiment_finbert"
+    ],
+    "accuracy_degraded": false,
+    "should_retrain": true,
+    "retrain_reason": "Drift detected in 5 features: rsi_14, macd, realised_vol_20, bb_pct, sentiment_finbert"
+}

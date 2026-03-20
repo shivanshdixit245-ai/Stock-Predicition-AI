@@ -1,0 +1,54 @@
+# Environment
+.env
+*.env
+
+# Data (too large for GitHub)
+data/raw/
+data/processed/
+data/results/
+
+# Models (commit only metadata, not large pkl files)
+data/models/**/*.pkl
+data/models/**/*.parquet
+
+# Keep these model files (small, needed for demo)
+!data/models/**/feature_list.json
+!data/models/**/training_metadata.json
+
+# MLflow
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs and debug files
+*.log
+backtest_*.txt
+pytest_*.txt
+ensemble_run_log.txt
+engine_error.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db

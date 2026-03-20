@@ -1,0 +1,9 @@
+[theme]
+base = "dark"
+
+[server]
+maxUploadSize = 50
+enableXsrfProtection = true
+
+[runner]
+magicEnabled = true
